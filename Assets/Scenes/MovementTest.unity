@@ -445,8 +445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b700471f74c494cbe9cdc2ed4836cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 800
-  sensY: 800
+  sensX: 1000
+  sensY: 1000
   orientation: {fileID: 212110813}
 --- !u!1 &1515094683
 GameObject:
@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 1956354870}
   - component: {fileID: 1956354869}
   - component: {fileID: 1956354871}
+  - component: {fileID: 1956354872}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -578,6 +579,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1956354872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956354868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3314d6812d6892e4d98e3a208f44311a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  groundDrag: 5
+  jumpForce: 12
+  jumpCooldown: 0.25
+  airMultiplier: 0.4
+  jumpKey: 32
+  playerHeight: 2
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 128
+  orientation: {fileID: 212110813}
 --- !u!1 &2039163195
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +614,7 @@ GameObject:
   - component: {fileID: 2039163198}
   - component: {fileID: 2039163197}
   - component: {fileID: 2039163196}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +662,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 17cc2234b8d84470898b8f869dd1adfc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
