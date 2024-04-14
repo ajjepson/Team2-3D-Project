@@ -17,13 +17,20 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         controlPanel.SetActive(false); //default
+        Time.timeScale = 1;
+
     }
 
     //Buttons for scene and panel loading//
     public void StartGame()
     {
-        /*SceneManager.LoadScene("level one");*/
+        
         StartCoroutine(ChangeScene());
+    }
+
+    public void MainScene()
+    {
+        SceneManager.LoadScene("Main");
     }
 
     public void ControlPanel()
@@ -42,6 +49,8 @@ public class UIController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
 
     private void Update()
     {
@@ -85,4 +94,6 @@ public class UIController : MonoBehaviour
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("level one");
     }
+
+   
 }
