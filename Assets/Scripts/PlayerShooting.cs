@@ -10,7 +10,7 @@ public class PlayerShooting : MonoBehaviour
     public float fireRate = 0.1f;
     public int maxAmmo = 100;
 
-    public AudioClip shootSound;
+    public AudioClip[] bolterShootSounds;
     public AudioClip emptyAmmoSound;
 
     public Quaternion handAdjustedRotation = Quaternion.Euler(90f, 90f, 90f);
@@ -35,7 +35,8 @@ public class PlayerShooting : MonoBehaviour
             bulletRigidbody.velocity = bulletSpawnPoint.forward * bulletSpeed;
 
             currentAmmo--;
-            audioSource.PlayOneShot(shootSound);
+            int randomIndex = Random.Range(0, bolterShootSounds.Length);
+            audioSource.PlayOneShot(bolterShootSounds[randomIndex]);
             Destroy(bullet, 3f);
         }
         else if (Input.GetMouseButtonDown(0) && currentAmmo <= 0)
