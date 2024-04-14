@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GrayAlien : MonoBehaviour
 {
+    private Rigidbody rb;
     public float aggroRange = 10f;
     public float aggroCooldown = 3f;
     public float movementSpeed = 5f;
@@ -21,13 +22,15 @@ public class GrayAlien : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         currentHealth = maxHealth;
+
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
     }
 
     void Update()
     {
         if (CanSeePlayer())
         {
-            ;
             AttackPlayer();
         }
         else
