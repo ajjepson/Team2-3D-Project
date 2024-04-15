@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public GameObject PausePanel;
-    bool isPaused = false;
+    public bool isPaused = false;
     
     
 
@@ -14,12 +14,14 @@ public class Pause : MonoBehaviour
     {
         PausePanel.SetActive(false);
         Time.timeScale = 1;
+        isPaused = false;
     }
 
     public void LoadMain()
     {
         SceneManager.LoadScene("Main");
         Time.timeScale = 1;
+        isPaused = true;
     }
 
 // Update is called once per frame
