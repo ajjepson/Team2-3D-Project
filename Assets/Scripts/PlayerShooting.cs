@@ -26,6 +26,7 @@ public class PlayerShooting : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        ammoText.text = $"{currentAmmo}";
     }
 
     private void Update()
@@ -44,12 +45,17 @@ public class PlayerShooting : MonoBehaviour
             int randomIndex = Random.Range(0, bolterShootSounds.Length);
             audioSource.PlayOneShot(bolterShootSounds[randomIndex]);
             Destroy(bullet, 3f);
-            ammoText.text = "Ammo: " + currentAmmo;
+            ammoText.text = $"{currentAmmo}";
         }
         else if (Input.GetMouseButtonDown(0) && currentAmmo <= 0)
         {
             // Play empty ammo sound
             audioSource.PlayOneShot(emptyAmmoSound);
+        }
+
+        if (currentAmmo <= 0)
+        {
+            ammoText.color = Color.red;
         }
     }
 
