@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Stored Sprint Multiplier is for the code. Sprint multiplier is for the inspector.
     public float moveSpeed;
+    public float sprintMultiplier = 2.5f;
+    private float storedSprintMultiplier = 1.0f;
+    private bool isSprinting = false;
 
     public float groundDrag;
 
@@ -16,8 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Keybinds
 
     public KeyCode jumpKey = KeyCode.Space;
-
-
+    public KeyCode sprintKey = KeyCode.LeftShift;
 
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -45,13 +48,25 @@ public class PlayerMovement : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // When to jump
-        if(Input.GetKey(jumpKey) && readyToJump && grounded)
+        if(Input.GetKeyDown(jumpKey) && readyToJump && grounded)
         {
             readyToJump = false;
 
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        // Sprinting
+        if (Input.GetKey(sprintKey))
+        {
+            storedSprintMultiplier = sprintMultiplier;
+            isSprinting = true;
+        }
+        else
+        {
+            storedSprintMultiplier = 1.0f;
+            isSprinting = false;
         }
     }
 
@@ -62,11 +77,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier, ForceMode.Force);
         }
         else
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier * airMultiplier, ForceMode.Force);
         }
     }
 
@@ -77,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         // Limit velocity if needed
         if (flatVel.magnitude > moveSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+            Vector3 limitedVel = flatVel.normalized * storedSprintMultiplier * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }

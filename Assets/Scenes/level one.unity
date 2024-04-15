@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -467,7 +467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86171067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 320321889}
   - component: {fileID: 320321888}
   - component: {fileID: 320321887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2958,7 +2958,7 @@ GameObject:
   - component: {fileID: 746875495}
   - component: {fileID: 746875494}
   - component: {fileID: 746875493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain_(0.00, 0.00, 1000.00)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3485,6 +3485,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: jumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: sprintKey
+      value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: groundDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 193104709108932501, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: sprintMultiplier
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4596780024923265267, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 481.7982
