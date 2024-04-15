@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public Animator anim;
     public Transform bulletSpawnPoint;
     public float bulletSpeed = 30f;
     public float fireRate = 0.1f;
     public int maxAmmo = 100;
+
+    public TMP_Text ammoText;
 
     public AudioClip[] bolterShootSounds;
     public AudioClip emptyAmmoSound;
@@ -34,10 +38,13 @@ public class PlayerShooting : MonoBehaviour
             Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
             bulletRigidbody.velocity = bulletSpawnPoint.forward * bulletSpeed;
 
+            anim.Play("Fire");
+
             currentAmmo--;
             int randomIndex = Random.Range(0, bolterShootSounds.Length);
             audioSource.PlayOneShot(bolterShootSounds[randomIndex]);
             Destroy(bullet, 3f);
+            ammoText.text = "Ammo: " + currentAmmo;
         }
         else if (Input.GetMouseButtonDown(0) && currentAmmo <= 0)
         {
@@ -55,4 +62,6 @@ public class PlayerShooting : MonoBehaviour
     {
         return currentAmmo;
     }
+
+    
 }
