@@ -8,6 +8,8 @@ TagManager:
   - Health
   - Ammo
   - BolterProjectile
+  - EnemyOrbProjectile
+  - DeathZone
   layers:
   - Default
   - TransparentFX
