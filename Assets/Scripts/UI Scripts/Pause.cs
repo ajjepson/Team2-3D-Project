@@ -42,6 +42,13 @@ public class Pause : MonoBehaviour
                 isPaused = false;
             }
         }
+        if (Input.GetKeyDown(KeyCode.Q)) // Temporary workaround to letting the player return to main menu
+        {
+            if (isPaused)
+            {
+                SceneManager.LoadScene("Main");
+            }
+        }
     }
 
     
