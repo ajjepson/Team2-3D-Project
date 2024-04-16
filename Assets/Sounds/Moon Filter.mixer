@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-4377593991662733206
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 7400cc2b9660ca94eb070aef2db8ca6d
+  m_EffectName: SFX Reverb
+  m_MixLevel: 0c85a724831bfbb4780ef612ff5c3028
+  m_Parameters:
+  - m_ParameterName: Dry Level
+    m_GUID: 1848b10c3b54bb64c900b68adecf07fa
+  - m_ParameterName: Room
+    m_GUID: 383c96e9deb9d5840aebc8bcb1b1f623
+  - m_ParameterName: Room HF
+    m_GUID: 3d9c751b1e1301b4ea381a3c8e916216
+  - m_ParameterName: Decay Time
+    m_GUID: a38e210dec55bcf4db3ea15732ec1efa
+  - m_ParameterName: Decay HF Ratio
+    m_GUID: 5f892bc549ac94d4799bacaf6ce6a479
+  - m_ParameterName: Reflections
+    m_GUID: 7dbe0ea0474320e44888032271431608
+  - m_ParameterName: Reflect Delay
+    m_GUID: 4dfe89fd47284d848b40f7e2a91c3ba6
+  - m_ParameterName: Reverb
+    m_GUID: 5f85573cecaa89d4ab99a52c3cff14a7
+  - m_ParameterName: Reverb Delay
+    m_GUID: 8f76e60fb2aa5454da8b56345d5024fd
+  - m_ParameterName: Diffusion
+    m_GUID: 20c32d09245959147b6bc0877ea9838c
+  - m_ParameterName: Density
+    m_GUID: 09fe94c36e5ccb9409becd728f199388
+  - m_ParameterName: HF Reference
+    m_GUID: b458819bfbadab745924385629be12d5
+  - m_ParameterName: Room LF
+    m_GUID: a7699b3ea020c284aa5891c8c626f43a
+  - m_ParameterName: LF Reference
+    m_GUID: b10d9852122c129498cdef2e492a2c6b
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-262581780545749714
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -59,6 +101,7 @@ AudioMixerGroupController:
   - {fileID: 24400004}
   - {fileID: 958510074794149711}
   - {fileID: 6545669124634601788}
+  - {fileID: -4377593991662733206}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -88,15 +131,29 @@ AudioMixerSnapshotController:
   m_SnapshotID: 5b1b31dd1f4e37045ae8592259b3dd10
   m_FloatValues:
     2552dd80a5f9a394c87572742981b61a: 969
+    7dbe0ea0474320e44888032271431608: -7226
     134594f1f58af554ea64dca2f54d5532: 0.851
     d11776529463de74dbe8248148ca6e1c: 2
+    b10d9852122c129498cdef2e492a2c6b: 507
     0751f072c59e6ef4894d2a586beb0895: 1.3
     67f3d3e21acc6ad4897448137b7fd790: 2000
+    09fe94c36e5ccb9409becd728f199388: 69.2
     ffa7b3e339fd14e4a88c61a2a17cf0e0: 0.5
-    6fe6ab34e17ea3949afb9015252b9978: -12.1
+    6fe6ab34e17ea3949afb9015252b9978: -10.8
     1fe6eb755d4852549a4e90678f3238b8: 0.135
     50e9d695745c597418131a2ef162dc38: 0.5
+    5f892bc549ac94d4799bacaf6ce6a479: 1.02
+    cd1a7f364a9308446809e299116c6e4c: 0.2
+    b33c10785f746d94c8a9af3d79668759: 0.891
+    20c32d09245959147b6bc0877ea9838c: 62.9
+    383c96e9deb9d5840aebc8bcb1b1f623: -3076
     f00fb25a79ce2514ab1f06fc3670e8ca: 0.878
+    3d9c751b1e1301b4ea381a3c8e916216: -3012
+    b458819bfbadab745924385629be12d5: 14574
+    1848b10c3b54bb64c900b68adecf07fa: 0
+    5f85573cecaa89d4ab99a52c3cff14a7: 989
+    a38e210dec55bcf4db3ea15732ec1efa: 2.3
+    4dfe89fd47284d848b40f7e2a91c3ba6: 0.11
     2f9795fe940d4a544ab549d2ea8afcdb: 0.013
     03d22b1fdaf95eb4787f94e2831affad: 0.874
     50f3fa5f5e1973f48bd9cc75dcea19f5: 7.03

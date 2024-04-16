@@ -9,6 +9,7 @@ public class GrayAlien : MonoBehaviour
     public float strafeDistance = 3f;
     public float shootInterval = 2f;
     public float projectileSpeed = 10f;
+    public float lastShotTime = 0f;
     public float stopDistance = 2f; // Distance at which the enemy stops moving towards the player
     public float strafeInterval = 3f;
     public float strafeSpeed = 2f;
@@ -16,10 +17,9 @@ public class GrayAlien : MonoBehaviour
     public GameObject playerCamera;
     public GameObject projectilePrefab;
     public Transform projectileSpawnPoint; // Shooting point
-    public AudioClip aggroSound;
-    public AudioClip shootSound;
-    public AudioClip hitSound;
-    public AudioClip deathSound;
+    public AudioClip[] aggroSounds;
+    public AudioClip[] shootSounds;
+    public AudioClip[] hitSounds;
     public Animator animator;
 
     private Transform player;
@@ -28,6 +28,7 @@ public class GrayAlien : MonoBehaviour
     private float currentHealth;
     private bool isAggro = false;
     private bool isStrafing = false;
+    private bool isDead = false;
     private Vector3 originalPosition;
     private Quaternion originalRotation;
 
@@ -43,7 +44,7 @@ public class GrayAlien : MonoBehaviour
 
     void Update()
     {
-        if (!isAggro && Vector3.Distance(transform.position, player.position) < detectionRange)
+        if (!isDead && !isAggro && Vector3.Distance(transform.position, player.position) < detectionRange)
         {
             TriggerAggro();
         }
@@ -65,10 +66,11 @@ public class GrayAlien : MonoBehaviour
 
                 // Play footstep sounds...
 
-                // Shoot projectiles...
-                if (Time.time % shootInterval == 0)
+                // Shoot
+                if (Time.time - lastShotTime >= shootInterval && !isDead)
                 {
                     ShootProjectile();
+                    lastShotTime = Time.time; // Update the last shot time
                 }
             }
             else
@@ -87,28 +89,32 @@ public class GrayAlien : MonoBehaviour
     void TriggerAggro()
     {
         isAggro = true;
-        audioSource.PlayOneShot(aggroSound);
-        animator.SetTrigger("Aggro");
+        int randomIndex = Random.Range(0, aggroSounds.Length);
+        audioSource.PlayOneShot(aggroSounds[randomIndex]);
+        // animator.SetTrigger("Aggro");
     }
 
     void ShootProjectile()
     {
-        // Instantiate the projectile at the given point
         GameObject projectileInstance = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
-
-        // Set the velocity of the projectile
         Rigidbody projectileRigidbody = projectileInstance.GetComponent<Rigidbody>();
+
         if (projectileRigidbody != null)
         {
-            Vector3 direction = (player.position - projectileSpawnPoint.position).normalized;
+            Vector3 direction = (playerCamera.transform.position - projectileSpawnPoint.position).normalized;
             projectileRigidbody.velocity = direction * projectileSpeed;
         }
+        
+        // Enemy Shoot SFX
+        int randomIndex = Random.Range(0, shootSounds.Length);
+        audioSource.PlayOneShot(shootSounds[randomIndex]);
     }
 
     IEnumerator Strafe()
     {
         isStrafing = true;
         Vector3 strafeDirection = Random.insideUnitCircle.normalized;
+        strafeDirection.y = 0f; // Ensure strafing only occurs along the XZ plane
         Vector3 targetPosition = originalPosition + strafeDirection * strafeDistance;
         Vector3 strafeVelocity = (targetPosition - transform.position).normalized * strafeSpeed;
         float startTime = Time.time;
@@ -121,13 +127,43 @@ public class GrayAlien : MonoBehaviour
         isStrafing = false;
     }
 
-    public void TakeDamage(int damage)
+    private void OnTriggerEnter(Collider other)
     {
-        // Damage logic...
+        if (other.CompareTag("BolterProjectile") && !isDead)
+        {
+            Debug.Log("Enemy took damage");
+            TakeDamage(40f); // Call TakeDamage method when colliding with a BolterProjectile
+            Destroy(other.gameObject); // Destroy the projectile upon collision
+        }
     }
 
-    void Die()
+    public void TakeDamage(float damage)
     {
-        // Death logic...
+        isAggro = true;
+        currentHealth -= damage; // Decrease current health by damage amount
+        int randomIndex = Random.Range(0, hitSounds.Length);
+        audioSource.PlayOneShot(hitSounds[randomIndex]);
+
+        if (currentHealth <= 0)
+        {
+            StartCoroutine(DieCoroutine()); // Call Die method if health is zero or less
+        }
+    }
+
+    IEnumerator DieCoroutine()
+    {
+        isDead = true; isAggro = false;
+
+        // Trigger death animation
+        if (animator != null)
+        {
+            animator.SetTrigger("Death");
+        }
+
+        // Wait for destroyDelay seconds
+        yield return new WaitForSeconds(5);
+
+        // Destroy the enemy object
+        Destroy(gameObject);
     }
 }

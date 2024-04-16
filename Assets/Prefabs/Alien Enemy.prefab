@@ -150,13 +150,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b537f88dc2a41d4891331e4e40e6577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 10
-  aggroCooldown: 3
-  movementSpeed: 5
-  rotationSpeed: 3
+  detectionRange: 20
+  aggroSpeed: 5
   strafeDistance: 2
-  shootCooldown: 1
+  shootInterval: 2
+  projectileSpeed: 10
+  stopDistance: 2
+  strafeInterval: 3
+  strafeSpeed: 2
   maxHealth: 100
+  playerCamera: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  projectileSpawnPoint: {fileID: 0}
+  aggroSound: {fileID: 0}
+  shootSound: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &7447986212855002146
 GameObject:
   m_ObjectHideFlags: 0
