@@ -4,95 +4,130 @@ using UnityEngine;
 
 public class GrayAlien : MonoBehaviour
 {
-    private Rigidbody rb;
-    public float aggroRange = 10f;
-    public float aggroCooldown = 3f;
-    public float movementSpeed = 5f;
-    public float rotationSpeed = 3f;
-    public float strafeDistance = 2f;
-    public float shootCooldown = 1f;
-    public int maxHealth = 100;
+    public float detectionRange = 10f;
+    public float aggroSpeed = 5f;
+    public float strafeDistance = 3f;
+    public float shootInterval = 2f;
+    public float projectileSpeed = 10f;
+    public float stopDistance = 2f; // Distance at which the enemy stops moving towards the player
+    public float strafeInterval = 3f;
+    public float strafeSpeed = 2f;
+    public float maxHealth = 100;
+    public GameObject playerCamera;
+    public GameObject projectilePrefab;
+    public Transform projectileSpawnPoint; // Shooting point
+    public AudioClip aggroSound;
+    public AudioClip shootSound;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    public Animator animator;
 
     private Transform player;
-    private float lastAggroTime;
-    private float lastShootTime;
-    private int currentHealth;
+    private Rigidbody rb;
+    private AudioSource audioSource;
+    private float currentHealth;
+    private bool isAggro = false;
+    private bool isStrafing = false;
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        currentHealth = maxHealth;
-
         rb = GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        audioSource = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
     }
 
     void Update()
     {
-        if (CanSeePlayer())
+        if (!isAggro && Vector3.Distance(transform.position, player.position) < detectionRange)
         {
-            AttackPlayer();
+            TriggerAggro();
         }
-        else
-        {
-            // Movement logic when not aggroed
-        }
-    }
 
-    bool CanSeePlayer()
-    {
-        if (Vector3.Distance(transform.position, player.position) < aggroRange)
+        if (isAggro)
         {
-            Debug.Log("Correct distance for aggro");
-            RaycastHit hit;
-            LayerMask layerMask = ~(1 << LayerMask.NameToLayer("Enemy")); // Ignore layer with Enemy tag
-            if (Physics.Linecast(transform.position, player.position, out hit, layerMask))
+            // Look at the player's camera only on the Y-axis
+            Vector3 lookAtPosition = playerCamera.transform.position;
+            lookAtPosition.y = transform.position.y; // Keep the Y position of the enemy unchanged
+            transform.LookAt(lookAtPosition);
+
+            // Check distance to player
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+            if (distanceToPlayer > stopDistance)
             {
-                if (hit.transform == player)
-                    return true;
-                Debug.Log("Enemy can see the player");
+                // Move towards the player
+                Vector3 moveDirection = (player.position - transform.position).normalized;
+                rb.velocity = moveDirection * aggroSpeed;
+
+                // Play footstep sounds...
+
+                // Shoot projectiles...
+                if (Time.time % shootInterval == 0)
+                {
+                    ShootProjectile();
+                }
+            }
+            else
+            {
+                rb.velocity = Vector3.zero;
+            }
+
+            // Strafe left and right
+            if (!isStrafing && Time.time % strafeInterval < 0.1f)
+            {
+                StartCoroutine(Strafe());
             }
         }
-        return false;
     }
 
-    void AttackPlayer()
+    void TriggerAggro()
     {
-        // Rotate towards player
-        Vector3 direction = player.position - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        isAggro = true;
+        audioSource.PlayOneShot(aggroSound);
+        animator.SetTrigger("Aggro");
+    }
 
-        // Movement towards player
-        transform.position += transform.forward * movementSpeed * Time.deltaTime;
+    void ShootProjectile()
+    {
+        // Instantiate the projectile at the given point
+        GameObject projectileInstance = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
 
-        // Strafing
-        transform.position += transform.right * Mathf.Sin(Time.time) * strafeDistance * Time.deltaTime;
-
-        // Shooting
-        if (Time.time - lastShootTime > shootCooldown)
+        // Set the velocity of the projectile
+        Rigidbody projectileRigidbody = projectileInstance.GetComponent<Rigidbody>();
+        if (projectileRigidbody != null)
         {
-            lastShootTime = Time.time;
-            Shoot();
+            Vector3 direction = (player.position - projectileSpawnPoint.position).normalized;
+            projectileRigidbody.velocity = direction * projectileSpeed;
         }
     }
 
-    void Shoot()
+    IEnumerator Strafe()
     {
-        // Shooting logic here
+        isStrafing = true;
+        Vector3 strafeDirection = Random.insideUnitCircle.normalized;
+        Vector3 targetPosition = originalPosition + strafeDirection * strafeDistance;
+        Vector3 strafeVelocity = (targetPosition - transform.position).normalized * strafeSpeed;
+        float startTime = Time.time;
+        while (Time.time - startTime < strafeInterval)
+        {
+            rb.velocity = strafeVelocity;
+            yield return null;
+        }
+        rb.velocity = Vector3.zero;
+        isStrafing = false;
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        // Damage logic...
     }
 
     void Die()
     {
-        // Death logic here
+        // Death logic...
     }
 }

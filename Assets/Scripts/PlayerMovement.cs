@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float sprintMultiplier = 2.5f;
     private float storedSprintMultiplier = 1.0f;
-    private bool isSprinting = false;
 
     public float groundDrag;
 
@@ -61,12 +60,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(sprintKey))
         {
             storedSprintMultiplier = sprintMultiplier;
-            isSprinting = true;
         }
         else
         {
             storedSprintMultiplier = 1.0f;
-            isSprinting = false;
         }
     }
 
