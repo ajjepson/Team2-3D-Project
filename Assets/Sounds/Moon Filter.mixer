@@ -42,6 +42,28 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-1724995047940946531
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 84e2f372c67074a43b3cc073f46a8af8
+  m_EffectName: Compressor
+  m_MixLevel: 8a8685ec7a72d6945a864a0f63ecf0b8
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 5cd047347bf5eae488baf9ab1ad0a481
+  - m_ParameterName: Attack
+    m_GUID: bec2d589b7cd47d47bbb226718ee6c4e
+  - m_ParameterName: Release
+    m_GUID: e640af979999ae04c9a501073cafc98d
+  - m_ParameterName: Make up gain
+    m_GUID: ba5ff2feb185efe46a680189c34442df
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-262581780545749714
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -102,6 +124,7 @@ AudioMixerGroupController:
   - {fileID: 958510074794149711}
   - {fileID: 6545669124634601788}
   - {fileID: -4377593991662733206}
+  - {fileID: -1724995047940946531}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -135,25 +158,29 @@ AudioMixerSnapshotController:
     134594f1f58af554ea64dca2f54d5532: 0.851
     d11776529463de74dbe8248148ca6e1c: 2
     b10d9852122c129498cdef2e492a2c6b: 507
-    0751f072c59e6ef4894d2a586beb0895: 1.3
+    0751f072c59e6ef4894d2a586beb0895: 1.2
     67f3d3e21acc6ad4897448137b7fd790: 2000
     09fe94c36e5ccb9409becd728f199388: 69.2
     ffa7b3e339fd14e4a88c61a2a17cf0e0: 0.5
-    6fe6ab34e17ea3949afb9015252b9978: -10.8
+    5cd047347bf5eae488baf9ab1ad0a481: -38
+    6fe6ab34e17ea3949afb9015252b9978: 0
     1fe6eb755d4852549a4e90678f3238b8: 0.135
-    50e9d695745c597418131a2ef162dc38: 0.5
+    50e9d695745c597418131a2ef162dc38: 0.38
     5f892bc549ac94d4799bacaf6ce6a479: 1.02
     cd1a7f364a9308446809e299116c6e4c: 0.2
+    e640af979999ae04c9a501073cafc98d: 50
     b33c10785f746d94c8a9af3d79668759: 0.891
     20c32d09245959147b6bc0877ea9838c: 62.9
+    bec2d589b7cd47d47bbb226718ee6c4e: 50
     383c96e9deb9d5840aebc8bcb1b1f623: -3076
     f00fb25a79ce2514ab1f06fc3670e8ca: 0.878
     3d9c751b1e1301b4ea381a3c8e916216: -3012
     b458819bfbadab745924385629be12d5: 14574
     1848b10c3b54bb64c900b68adecf07fa: 0
-    5f85573cecaa89d4ab99a52c3cff14a7: 989
-    a38e210dec55bcf4db3ea15732ec1efa: 2.3
+    5f85573cecaa89d4ab99a52c3cff14a7: 0
+    a38e210dec55bcf4db3ea15732ec1efa: 2
     4dfe89fd47284d848b40f7e2a91c3ba6: 0.11
+    ba5ff2feb185efe46a680189c34442df: 17
     2f9795fe940d4a544ab549d2ea8afcdb: 0.013
     03d22b1fdaf95eb4787f94e2831affad: 0.874
     50f3fa5f5e1973f48bd9cc75dcea19f5: 7.03

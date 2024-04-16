@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b537f88dc2a41d4891331e4e40e6577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 20
+  detectionRange: 30
   aggroSpeed: 5
   strafeDistance: 2
   shootInterval: 1
@@ -199,9 +199,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 3
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 600
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -236,7 +236,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -266,6 +266,15 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.09391122
       value: 1
       inSlope: 0
       outSlope: 0

@@ -258,6 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4596780024923265267}
   - component: {fileID: 1883753592283366031}
+  - component: {fileID: 3556352408670834794}
   - component: {fileID: 513003547802759186}
   - component: {fileID: 193104709108932501}
   - component: {fileID: 8411305506621228801}
@@ -314,6 +315,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!136 &3556352408670834794
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237935366500715112}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1.8491695
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.82034683, z: 0}
 --- !u!65 &513003547802759186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -372,6 +396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adae6afc1c953514db6e732d562790e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 100
+  takingDamageSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  restartDelay: 3
+  healthText: {fileID: 0}
+  gameOverText: {fileID: 0}
 --- !u!1001 &2736422743619049294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -595,7 +625,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 5097ffe81530e534aad220ee0cb2d13d, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.446
   m_Pitch: 0.85
   Loop: 0
   Mute: 0
