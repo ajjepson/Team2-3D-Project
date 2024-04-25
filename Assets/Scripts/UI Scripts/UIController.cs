@@ -12,11 +12,12 @@ public class UIController : MonoBehaviour
 
     public GameObject mainPanel;
     public GameObject controlPanel;
-
+    public GameObject creditsPanel;
 
     private void Start()
     {
         controlPanel.SetActive(false); //default
+        creditsPanel.SetActive(false); //default
         Time.timeScale = 1;
 
     }
@@ -38,11 +39,17 @@ public class UIController : MonoBehaviour
         controlPanel.SetActive(true);
         mainPanel.SetActive(false);
     }
+    public void CreditsPanel()
+    {
+        creditsPanel.SetActive(true);
+        mainPanel.SetActive(false);
+    }
 
     public void MainMenuPanel()
     {
         mainPanel.SetActive(true);
         controlPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
 
     public void OnClickQuitButton()
