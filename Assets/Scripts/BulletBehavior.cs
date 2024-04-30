@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
+    public AudioClip[] bulletImpactSounds;
+
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        Destroy(gameObject, 4f);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -12,6 +21,9 @@ public class BulletBehavior : MonoBehaviour
         }
         else
         {
+            audioSource.enabled = true;
+            int randomIndex = Random.Range(0, bulletImpactSounds.Length);
+            audioSource.PlayOneShot(bulletImpactSounds[randomIndex]);
             Destroy(gameObject);
         }
 
