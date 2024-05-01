@@ -18,7 +18,7 @@ public class PlayerShooting : MonoBehaviour
     public AudioClip emptyAmmoSound;
 
     public Quaternion handAdjustedRotation = Quaternion.Euler(90f, 90f, 90f);
-    private int currentAmmo = 40;
+    public int currentBolterAmmo = 40;
     private float nextFireTime;
 
     private AudioSource audioSource;
@@ -26,13 +26,13 @@ public class PlayerShooting : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        ammoText.text = $"{currentAmmo}";
     }
 
     private void Update()
     {
+        ammoText.text = $"{currentBolterAmmo}";
         // Check if it's time to fire and if there's enough ammo
-        if (Input.GetMouseButton(0) && Time.time >= nextFireTime && currentAmmo > 0)
+        if (Input.GetMouseButton(0) && Time.time >= nextFireTime && currentBolterAmmo > 0)
         {
             nextFireTime = Time.time + fireRate;
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation * handAdjustedRotation);
@@ -41,33 +41,32 @@ public class PlayerShooting : MonoBehaviour
 
             anim.Play("Fire");
 
-            currentAmmo--;
+            currentBolterAmmo--;
             int randomIndex = Random.Range(0, bolterShootSounds.Length);
             audioSource.PlayOneShot(bolterShootSounds[randomIndex]);
             Destroy(bullet, 3f);
-            ammoText.text = $"{currentAmmo}";
+            ammoText.text = $"{currentBolterAmmo}";
         }
-        else if (Input.GetMouseButtonDown(0) && currentAmmo <= 0)
+        else if (Input.GetMouseButtonDown(0) && currentBolterAmmo <= 0)
         {
             // Play empty ammo sound
             audioSource.PlayOneShot(emptyAmmoSound);
         }
 
-        if (currentAmmo <= 0)
+        if (currentBolterAmmo <= 0)
         {
             ammoText.color = Color.red;
         }
     }
 
-    public void AddAmmo(int amount)
+    public void AddBolterAmmo(int amount)
     {
-        currentAmmo = Mathf.Min(currentAmmo + amount, maxAmmo);
+        currentBolterAmmo = Mathf.Min(currentBolterAmmo + amount, maxAmmo);
+        Debug.Log($"{amount} Ammo Received in gun");
     }
 
-    public int GetCurrentAmmo()
+    public int GetCurrentBolterAmmo()
     {
-        return currentAmmo;
+        return currentBolterAmmo;
     }
-
-    
 }
