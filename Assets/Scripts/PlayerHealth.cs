@@ -10,12 +10,12 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
     public AudioClip takingDamageSound;
-    public AudioClip deathSound;
+    public AudioClip[] playerDeathSounds;
     public float restartDelay = 3f;
     public TMP_Text healthText;
     public GameObject gameOverText;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -66,10 +66,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        if (deathSound != null)
-        {
-            audioSource.PlayOneShot(deathSound);
-        }
+        int randomIndex = Random.Range(0, playerDeathSounds.Length);
+        audioSource.PlayOneShot(playerDeathSounds[randomIndex]);
 
         gameOverText.SetActive(true);
         StartCoroutine(RestartAfterDelay());

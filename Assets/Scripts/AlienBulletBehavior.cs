@@ -15,4 +15,9 @@ public class AlienBulletBehavior : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Start()
+    {
+        Destroy(gameObject, 5f);
+    }
 }

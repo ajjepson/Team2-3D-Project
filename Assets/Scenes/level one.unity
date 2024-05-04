@@ -1657,6 +1657,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -1761,6 +1765,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -7101,6 +7109,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -12933,6 +12945,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -13271,6 +13287,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -13597,6 +13617,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6034575206850781665, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
+      propertyPath: m_Volume
+      value: 0.486
+      objectReference: {fileID: 0}
     - target: {fileID: 6187477436039291880, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
       propertyPath: m_ClearFlags
       value: 1
@@ -13832,6 +13856,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -13905,6 +13933,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -14674,6 +14706,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -14960,6 +14996,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
@@ -27672,6 +27712,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1551740581}
+    - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: projectileSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7913553732104390426, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.35
