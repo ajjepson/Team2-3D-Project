@@ -8,7 +8,7 @@ public class GrayAlien : MonoBehaviour
     public float aggroSpeed = 5f;
     public float strafeDistance = 3f;
     public float shootInterval = 2f;
-    public float projectileSpeed = 10f;
+    public float projectileSpeed = 25f;
     public float lastShotTime = 0f;
     public float stopDistance = 2f; // Distance at which the enemy stops moving towards the player
     public float strafeInterval = 3f;
