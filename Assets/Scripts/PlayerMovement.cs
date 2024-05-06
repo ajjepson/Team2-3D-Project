@@ -43,43 +43,50 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-
-        // When to jump
-        if(Input.GetKeyDown(jumpKey) && readyToJump && grounded)
+        if (GlobalVariables.playerAlive)
         {
-            readyToJump = false;
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
 
-            Jump();
+            // When to jump
+            if (Input.GetKeyDown(jumpKey) && readyToJump && grounded)
+            {
+                readyToJump = false;
 
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
+                Jump();
 
-        // Sprinting
-        if (Input.GetKey(sprintKey))
-        {
-            storedSprintMultiplier = sprintMultiplier;
-        }
-        else
-        {
-            storedSprintMultiplier = 1.0f;
+                Invoke(nameof(ResetJump), jumpCooldown);
+            }
+
+            // Sprinting
+            if (Input.GetKey(sprintKey))
+            {
+                storedSprintMultiplier = sprintMultiplier;
+            }
+            else
+            {
+                storedSprintMultiplier = 1.0f;
+            }
         }
     }
 
     private void MovePlayer()
     {
-        // Calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        if (GlobalVariables.playerAlive)
+        {
+            // Calculate movement direction
+            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        if (grounded)
-        {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier, ForceMode.Force);
+            if (grounded)
+            {
+                rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier, ForceMode.Force);
+            }
+            else
+            {
+                rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier * airMultiplier, ForceMode.Force);
+            }
         }
-        else
-        {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier * airMultiplier, ForceMode.Force);
-        }
+            
     }
 
     private void SpeedControl()

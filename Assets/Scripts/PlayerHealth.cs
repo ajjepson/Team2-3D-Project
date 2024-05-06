@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
+
+        GlobalVariables.playerAlive = true;
     }
 
     private void Update()
@@ -66,6 +69,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        GlobalVariables.playerAlive = false;
+
         int randomIndex = Random.Range(0, playerDeathSounds.Length);
         audioSource.PlayOneShot(playerDeathSounds[randomIndex]);
 
