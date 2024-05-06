@@ -156,13 +156,11 @@ public class GrayAlien : MonoBehaviour
     {
         isDead = true; isAggro = false;
 
-        // Trigger death animation
         if (animator != null)
         {
             animator.SetTrigger("Death");
         }
 
-        // Wait for destroyDelay seconds
         yield return new WaitForSeconds(5);
 
         // Destroy the enemy object

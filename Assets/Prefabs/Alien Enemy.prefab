@@ -162,7 +162,7 @@ MonoBehaviour:
   strafeInterval: 2.5
   strafeSpeed: 2
   maxHealth: 100
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 8237935366500715112, guid: cf82f7364391c0e48b3cedf576937d8a, type: 3}
   projectilePrefab: {fileID: 4364451504160618729, guid: fe2d3015bcb1c914dab113e5d36ac172, type: 3}
   projectileSpawnPoint: {fileID: 4096140570471901631}
   aggroSounds:
