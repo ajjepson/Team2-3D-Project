@@ -450,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   takingDamageSound: {fileID: 8300000, guid: 5807f583c6903ee4bb3d20621d79e669, type: 3}
+  beingHealedSound: {fileID: 8300000, guid: 298f62d479625734bba15160b0122980, type: 3}
   playerDeathSounds:
   - {fileID: 8300000, guid: 164f3d74ec47c074eb66bfd4dd7d5b4c, type: 3}
   - {fileID: 8300000, guid: 9a369242bf514234cb3763dacde3c3df, type: 3}
@@ -790,6 +791,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9cf1024d46d04af4b86a3298ef27ce3b, type: 3}
   - {fileID: 8300000, guid: 51ddc6ed148521e46ae38aa6620b9397, type: 3}
   emptyAmmoSound: {fileID: 8300000, guid: 3154af813f51dbc4f93e63cdf457823f, type: 3}
+  ammoPickupSound: {fileID: 8300000, guid: 8c4d5dfdc23698d4591c8fcafdd15327, type: 3}
   handAdjustedRotation: {x: 0, y: 90, z: 90, w: 0}
   currentBolterAmmo: 40
 --- !u!82 &1169351169955623803

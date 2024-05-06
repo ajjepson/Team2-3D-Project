@@ -10,7 +10,7 @@ public class BolterAmmoPickup : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            playerShooting.AddBolterAmmo(20);
+            playerShooting.AddBolterAmmo(10);
             Debug.Log("Added Ammo");
             Destroy(gameObject);
         }

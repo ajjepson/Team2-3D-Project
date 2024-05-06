@@ -16,6 +16,7 @@ public class PlayerShooting : MonoBehaviour
 
     public AudioClip[] bolterShootSounds;
     public AudioClip emptyAmmoSound;
+    public AudioClip ammoPickupSound;
 
     public Quaternion handAdjustedRotation = Quaternion.Euler(90f, 90f, 90f);
     public int currentBolterAmmo = 40;
@@ -66,7 +67,7 @@ public class PlayerShooting : MonoBehaviour
     public void AddBolterAmmo(int amount)
     {
         currentBolterAmmo = Mathf.Min(currentBolterAmmo + amount, maxAmmo);
-        Debug.Log($"{amount} Ammo Received in gun");
+        audioSource.PlayOneShot(ammoPickupSound);
     }
 
     public int GetCurrentBolterAmmo()

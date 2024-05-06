@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     private int currentHealth;
     public AudioClip takingDamageSound;
+    public AudioClip beingHealedSound;
     public AudioClip[] playerDeathSounds;
     public float restartDelay = 3f;
     public TMP_Text healthText;
@@ -48,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth += amount;
         currentHealth = Mathf.Min(currentHealth, maxHealth);
+        audioSource.PlayOneShot(beingHealedSound);
     }
 
     void TakeDamage()

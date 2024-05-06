@@ -39,7 +39,6 @@ public class BulletBehavior : MonoBehaviour
                     Destroy(col);
                 }
 
-                // Disable the mesh renderer to hide the visual representation
                 MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
                 if (meshRenderer != null)
                 {
@@ -49,14 +48,7 @@ public class BulletBehavior : MonoBehaviour
                 // Set the flag to prevent further processing of OnCollisionEnter
                 hasHit = true;
 
-                // Optionally, you can add sound emission logic here
-                // For example, play a sound
                 AudioSource audioSource = GetComponent<AudioSource>();
-                if (audioSource != null)
-                {
-                    audioSource.Play();
-                }
-
                 audioSource.enabled = true;
                 int randomIndex = Random.Range(0, bulletImpactSounds.Length);
                 audioSource.PlayOneShot(bulletImpactSounds[randomIndex]);

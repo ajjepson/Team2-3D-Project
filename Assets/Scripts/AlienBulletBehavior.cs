@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class AlienBulletBehavior : MonoBehaviour
 {
+    void Start()
+    {
+        Destroy(gameObject, 5f);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -16,8 +21,4 @@ public class AlienBulletBehavior : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        Destroy(gameObject, 5f);
-    }
 }
