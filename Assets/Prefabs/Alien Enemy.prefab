@@ -179,6 +179,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 38fb2f24bf57a84409a41b6208685b92, type: 3}
   - {fileID: 8300000, guid: f22c8d2d48d07bd49a7e148a403ce62e, type: 3}
   - {fileID: 8300000, guid: ae078d6ebdbd1564cb82e321554abcc5, type: 3}
+  altHitFeedback: {fileID: 8300000, guid: 8649d19d24e37064190a43bda1548c9b, type: 3}
   animator: {fileID: 0}
 --- !u!82 &4957721000474716378
 AudioSource:

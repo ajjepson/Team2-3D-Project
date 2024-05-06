@@ -20,6 +20,7 @@ public class GrayAlien : MonoBehaviour
     public AudioClip[] aggroSounds;
     public AudioClip[] shootSounds;
     public AudioClip[] hitSounds;
+    public AudioClip altHitFeedback;
     public Animator animator;
 
     private Transform player;
@@ -143,6 +144,7 @@ public class GrayAlien : MonoBehaviour
         currentHealth -= damage; // Decrease current health by damage amount
         int randomIndex = Random.Range(0, hitSounds.Length);
         audioSource.PlayOneShot(hitSounds[randomIndex]);
+        audioSource.PlayOneShot(altHitFeedback);
 
         if (currentHealth <= 0)
         {
