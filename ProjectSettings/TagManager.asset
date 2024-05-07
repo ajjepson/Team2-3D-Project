@@ -11,7 +11,11 @@ TagManager:
   - EnemyOrbProjectile
   - DeathZone
   - EndLevel
+<<<<<<< Updated upstream
   - LevelOneTransition
+=======
+  - PlayerOrbProjectile
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

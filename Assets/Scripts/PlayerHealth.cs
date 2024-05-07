@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
 
     public AudioSource audioSource;
 
+    private bool isDead = false;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -34,14 +36,17 @@ public class PlayerHealth : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("EnemyOrbProjectile"))
+        if (!isDead)
         {
-            TakeDamage();
-            Destroy(other.gameObject);
-        }
-        else if (other.CompareTag("DeathZone"))
-        {
-            Die();
+            if (other.CompareTag("EnemyOrbProjectile"))
+            {
+                TakeDamage();
+                Destroy(other.gameObject);
+            }
+            else if (other.CompareTag("DeathZone"))
+            {
+                Die();
+            }
         }
     }
 
@@ -56,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= 20; // Adjust the damage amount as needed
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -71,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
         GlobalVariables.playerAlive = false;
 
         int randomIndex = Random.Range(0, playerDeathSounds.Length);

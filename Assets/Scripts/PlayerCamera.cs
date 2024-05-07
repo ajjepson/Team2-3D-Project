@@ -1,4 +1,3 @@
-using OpenCover.Framework.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,6 +21,8 @@ public class PlayerCamera : MonoBehaviour
 
     void Start()
     {
+        SwitchToBolter();
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -52,17 +53,41 @@ public class PlayerCamera : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            SwitchToBolter();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SwitchToOrbLauncher();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SwitchToDualSMGs();
+        }        
+    }
+
+    public void SwitchToBolter()
+    {
+        if (hasBolter)
+        {
             DisableAllWeapons();
             bolter.SetActive(true);
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+    public void SwitchToOrbLauncher()
+    {
+        if (hasOrbLauncher)
         {
             DisableAllWeapons();
             orbLauncher.SetActive(true);
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+    public void SwitchToDualSMGs()
+    {
+        if (hasTwinSmgs)
         {
             DisableAllWeapons();
             twinSmgs.SetActive(true);

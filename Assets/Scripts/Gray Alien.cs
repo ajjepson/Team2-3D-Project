@@ -132,8 +132,12 @@ public class GrayAlien : MonoBehaviour
     {
         if (other.CompareTag("BolterProjectile") && !isDead)
         {
-            Debug.Log("Enemy took damage");
             TakeDamage(40f); // Call TakeDamage method when colliding with a BolterProjectile
+            Destroy(other.gameObject); // Destroy the projectile upon collision
+        }
+        if (other.CompareTag("PlayerOrbProjectile") && !isDead)
+        {
+            TakeDamage(85f); // Call TakeDamage method when colliding with a BolterProjectile
             Destroy(other.gameObject); // Destroy the projectile upon collision
         }
     }
