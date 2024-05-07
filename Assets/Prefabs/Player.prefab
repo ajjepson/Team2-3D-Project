@@ -914,7 +914,6 @@ MonoBehaviour:
   ammoPickupSound: {fileID: 8300000, guid: 8c4d5dfdc23698d4591c8fcafdd15327, type: 3}
   handAdjustedRotation: {x: 0.7071067, y: 0, z: 0, w: 0.7071067}
   currentOrbLauncherAmmo: 10
-  audioSource: {fileID: 0}
 --- !u!82 &1488597488416229938
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1192,7 +1191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8034597508366354429, guid: 9d7df527573236644bfe1ecb0210032b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
