@@ -3,14 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - DeathZone
-  - EndLevel
-  - LevelOneTransition
-  - Undefined
-  - PlayerOrbProjectile
-  - BolterProjectile
-  - EnemyOrbProjectile
+  tags: []
   layers:
   - Default
   - TransparentFX
