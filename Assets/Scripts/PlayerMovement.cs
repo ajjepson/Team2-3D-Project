@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -133,6 +134,14 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.drag = 0;
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("LevelOneTransition"))
+            {
+                SceneManager.LoadScene("Level two");
+            }
         }
     }
 }
