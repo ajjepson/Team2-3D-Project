@@ -5,21 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelOneTransition : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        void OnTriggerEnter(Collider other)
+        if (other.gameObject.tag == "Player")
         {
-            if (other.CompareTag("Player"))
-            {
-                SceneManager.LoadScene("Level two");
-            }
+            SceneManager.LoadScene("Level two");
         }
     }
 }

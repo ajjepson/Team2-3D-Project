@@ -11,6 +11,7 @@ TagManager:
   - EnemyOrbProjectile
   - DeathZone
   - EndLevel
+  - LevelOneTransition
   layers:
   - Default
   - TransparentFX
