@@ -54,7 +54,7 @@ public class GrayAlien : MonoBehaviour
         {
             // Look at the player's camera only on the Y-axis
             Vector3 lookAtPosition = playerCamera.transform.position;
-            lookAtPosition.y = transform.position.y; // Keep the Y position of the enemy unchanged
+            lookAtPosition.y = transform.position.y;
             transform.LookAt(lookAtPosition);
 
             // Check distance to player
