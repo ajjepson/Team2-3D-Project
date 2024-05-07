@@ -93,6 +93,13 @@ public class GrayAlien : MonoBehaviour
         int randomIndex = Random.Range(0, aggroSounds.Length);
         audioSource.PlayOneShot(aggroSounds[randomIndex]);
         // animator.SetTrigger("Aggro");
+        StartCoroutine(DisableAggro());
+    }
+
+    IEnumerator DisableAggro()
+    {
+        yield return new WaitForSeconds(8);
+        isAggro = false;
     }
 
     void ShootProjectile()

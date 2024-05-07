@@ -19,7 +19,8 @@ public class UIController : MonoBehaviour
         controlPanel.SetActive(false); //default
         creditsPanel.SetActive(false); //default
         Time.timeScale = 1;
-
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     //Buttons for scene and panel loading//

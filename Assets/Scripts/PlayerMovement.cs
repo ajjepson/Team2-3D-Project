@@ -17,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
     public float airMultiplier;
     bool readyToJump;
 
+    // Footstep Stuff
+
+    public AudioClip[] footstepSounds; // Array of footstep audio clips
+    private float footstepInterval = 0.8f; // Interval between footstep sounds
+    public AudioSource audioSource; // Reference to the AudioSource component
+
+    private float lastFootstepTime; // Time of the last footstep sound
+
     // Keybinds
 
     public KeyCode jumpKey = KeyCode.Space;
@@ -63,10 +71,12 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(sprintKey))
             {
                 storedSprintMultiplier = sprintMultiplier;
+                footstepInterval = 0.5f;
             }
             else
             {
                 storedSprintMultiplier = 1.0f;
+                footstepInterval = 0.8f;
             }
         }
     }
@@ -81,6 +91,18 @@ public class PlayerMovement : MonoBehaviour
             if (grounded)
             {
                 rb.AddForce(moveDirection.normalized * moveSpeed * 10f * storedSprintMultiplier, ForceMode.Force);
+
+                if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+                {
+                    //Footsteps
+                    if (Time.time - lastFootstepTime >= footstepInterval)
+                    {
+                        // Play a random footstep sound
+                        PlayRandomFootstepSound();
+                        // Update the time of the last footstep sound
+                        lastFootstepTime = Time.time;
+                    }
+                }
             }
             else
             {
@@ -88,6 +110,17 @@ public class PlayerMovement : MonoBehaviour
             }
         }
             
+    }
+
+    void PlayRandomFootstepSound()
+    {
+        // Choose a random footstep sound from the array
+        int randomIndex = Random.Range(0, footstepSounds.Length);
+        AudioClip footstepSound = footstepSounds[randomIndex];
+        float randomVolume = Random.Range(0.3f, 0.5f);
+
+        // Play the selected footstep sound
+        audioSource.PlayOneShot(footstepSound, randomVolume);
     }
 
     private void SpeedControl()
