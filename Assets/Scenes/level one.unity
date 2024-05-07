@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -641,7 +641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86171067}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 116749058}
   - component: {fileID: 116749057}
   - component: {fileID: 116749056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,6 +947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e4006e5015f5dc44cb686629dd51f386, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -972,7 +976,7 @@ GameObject:
   - component: {fileID: 121556011}
   - component: {fileID: 121556010}
   - component: {fileID: 121556009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1081,7 @@ GameObject:
   - component: {fileID: 123230247}
   - component: {fileID: 123230246}
   - component: {fileID: 123230245}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1243,7 @@ GameObject:
   - component: {fileID: 174297799}
   - component: {fileID: 174297798}
   - component: {fileID: 174297797}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2180,7 +2184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2316,7 +2320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2404,7 +2408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2688,7 +2692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2890,7 +2894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3111,6 +3115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -3192,7 +3200,7 @@ GameObject:
   - component: {fileID: 320321889}
   - component: {fileID: 320321888}
   - component: {fileID: 320321887}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3461,7 +3469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3541,7 +3549,7 @@ GameObject:
   - component: {fileID: 347605102}
   - component: {fileID: 347605101}
   - component: {fileID: 347605100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3789,6 +3797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -3871,7 +3883,7 @@ GameObject:
   - component: {fileID: 371724643}
   - component: {fileID: 371724642}
   - component: {fileID: 371724641}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3973,7 +3985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 374279435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Structures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4098,7 +4110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4178,7 +4190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4204,6 +4216,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -4281,6 +4297,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -4465,7 +4485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4628,7 +4648,7 @@ GameObject:
   - component: {fileID: 439255707}
   - component: {fileID: 439255706}
   - component: {fileID: 439255705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4732,6 +4752,10 @@ PrefabInstance:
     - target: {fileID: 934671957052275388, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
       propertyPath: m_Name
       value: Contrainer02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 934671957052275388, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3268735616603892030, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4864,7 +4888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5032,6 +5056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -5167,7 +5195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5257,7 +5285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5283,6 +5311,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -5487,7 +5519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5570,7 +5602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5731,7 +5763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6013,7 +6045,7 @@ GameObject:
   - component: {fileID: 664617981}
   - component: {fileID: 664617980}
   - component: {fileID: 664617979}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6118,7 +6150,7 @@ GameObject:
   - component: {fileID: 665355344}
   - component: {fileID: 665355343}
   - component: {fileID: 665355342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (17)
   m_TagString: EndLevel
   m_Icon: {fileID: 0}
@@ -6228,7 +6260,7 @@ GameObject:
   - component: {fileID: 671198814}
   - component: {fileID: 671198813}
   - component: {fileID: 671198812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6427,7 +6459,7 @@ GameObject:
   - component: {fileID: 693756944}
   - component: {fileID: 693756943}
   - component: {fileID: 693756942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6536,6 +6568,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -6704,7 +6740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6787,7 +6823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6811,7 +6847,7 @@ GameObject:
   - component: {fileID: 746875495}
   - component: {fileID: 746875494}
   - component: {fileID: 746875493}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Terrain_(0.00, 0.00, 1000.00)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6989,7 +7025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7014,7 +7050,7 @@ GameObject:
   - component: {fileID: 771986225}
   - component: {fileID: 771986224}
   - component: {fileID: 771986223}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7119,7 +7155,7 @@ GameObject:
   - component: {fileID: 784793271}
   - component: {fileID: 784793270}
   - component: {fileID: 784793269}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7223,6 +7259,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -7439,7 +7479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7498,7 +7538,7 @@ GameObject:
   - component: {fileID: 845300035}
   - component: {fileID: 845300034}
   - component: {fileID: 845300033}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7602,6 +7642,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -7744,6 +7788,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 909c7d096a8512d49b2465e346ce3124, type: 3}
       propertyPath: m_Name
       value: watchtower
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 909c7d096a8512d49b2465e346ce3124, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7940,6 +7988,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: e4006e5015f5dc44cb686629dd51f386, type: 3}
       propertyPath: m_Name
       value: Building04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e4006e5015f5dc44cb686629dd51f386, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8736,7 +8788,7 @@ GameObject:
   - component: {fileID: 906752420}
   - component: {fileID: 906752419}
   - component: {fileID: 906752418}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8840,6 +8892,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -8963,7 +9019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 926054071}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: RockPiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9287,6 +9343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -9369,6 +9429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -9450,6 +9514,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -9563,6 +9631,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -9704,7 +9776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9733,6 +9805,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -9815,6 +9891,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -10614,6 +10694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -10800,7 +10884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1107011473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Out of Bounds Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10843,7 +10927,7 @@ GameObject:
   - component: {fileID: 1109841845}
   - component: {fileID: 1109841844}
   - component: {fileID: 1109841843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11095,7 +11179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11239,7 +11323,7 @@ GameObject:
   - component: {fileID: 1175117136}
   - component: {fileID: 1175117135}
   - component: {fileID: 1175117134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11410,7 +11494,7 @@ GameObject:
   - component: {fileID: 1184806770}
   - component: {fileID: 1184806769}
   - component: {fileID: 1184806768}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11573,7 +11657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12490,6 +12574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -12625,7 +12713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12699,6 +12787,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -12835,7 +12927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12887,7 +12979,7 @@ GameObject:
   - component: {fileID: 1295233359}
   - component: {fileID: 1295233358}
   - component: {fileID: 1295233357}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13050,7 +13142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13138,7 +13230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13274,7 +13366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13299,7 +13391,7 @@ GameObject:
   - component: {fileID: 1321724617}
   - component: {fileID: 1321724616}
   - component: {fileID: 1321724615}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13404,7 +13496,7 @@ GameObject:
   - component: {fileID: 1358811384}
   - component: {fileID: 1358811383}
   - component: {fileID: 1358811382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13559,7 +13651,7 @@ GameObject:
   - component: {fileID: 1364222363}
   - component: {fileID: 1364222362}
   - component: {fileID: 1364222361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18604,6 +18696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -18827,7 +18923,7 @@ GameObject:
   - component: {fileID: 1495648756}
   - component: {fileID: 1495648755}
   - component: {fileID: 1495648754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20284,63 +20380,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6236790930908222091, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200800, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200802, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200808, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200810, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200812, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200814, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200816, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200818, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200820, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200822, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200824, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200826, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200828, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6292654871758200830, guid: b4ebfe3d8ab4def429989cd25349eb90, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20676,7 +20772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20817,7 +20913,7 @@ GameObject:
   - component: {fileID: 1662706651}
   - component: {fileID: 1662706650}
   - component: {fileID: 1662706649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20922,7 +21018,7 @@ GameObject:
   - component: {fileID: 1663383880}
   - component: {fileID: 1663383879}
   - component: {fileID: 1663383878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21225,7 +21321,7 @@ GameObject:
   - component: {fileID: 1706460037}
   - component: {fileID: 1706460036}
   - component: {fileID: 1706460035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21452,7 +21548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21477,7 +21573,7 @@ GameObject:
   - component: {fileID: 1743832687}
   - component: {fileID: 1743832686}
   - component: {fileID: 1743832685}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21645,7 +21741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21772,6 +21868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building04
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e4006e5015f5dc44cb686629dd51f386, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21792,7 +21892,7 @@ GameObject:
   - component: {fileID: 1804448518}
   - component: {fileID: 1804448517}
   - component: {fileID: 1804448516}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22525,7 +22625,7 @@ GameObject:
   - component: {fileID: 1875592411}
   - component: {fileID: 1875592410}
   - component: {fileID: 1875592409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22635,6 +22735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -22716,6 +22820,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -22954,7 +23062,7 @@ GameObject:
   - component: {fileID: 1915222954}
   - component: {fileID: 1915222953}
   - component: {fileID: 1915222952}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23480,6 +23588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Enemy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
       value: 
@@ -23704,7 +23816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23842,7 +23954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23982,6 +24094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: watchtower
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 909c7d096a8512d49b2465e346ce3124, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -24011,6 +24127,10 @@ PrefabInstance:
     - target: {fileID: 934671957052275388, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
       propertyPath: m_Name
       value: Contrainer02
+      objectReference: {fileID: 0}
+    - target: {fileID: 934671957052275388, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3268735616603892030, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
       propertyPath: m_LocalScale.x
@@ -24165,6 +24285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Contrainer02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 934671957052275388, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3268735616603892030, guid: 7b0c9dae1e0a9401ca6e3dbc7071f72b, type: 3}
       propertyPath: m_LocalScale.x
       value: 7.4352894
@@ -24315,6 +24439,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
@@ -24532,7 +24660,7 @@ GameObject:
   - component: {fileID: 2091784300}
   - component: {fileID: 2091784299}
   - component: {fileID: 2091784298}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24778,7 +24906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f6217fbd585c2bc4dbecd12b9d221879, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24850,6 +24978,10 @@ PrefabInstance:
     - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: m_Name
       value: Alien Enemy (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007754025715339924, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3390723452488379299, guid: 64b294b5f7eac9243bf8dc8b64ece3a7, type: 3}
       propertyPath: playerCamera
