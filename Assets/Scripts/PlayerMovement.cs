@@ -140,7 +140,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (other.CompareTag("LevelOneTransition"))
             {
-                Debug.Log("Test");
                 SceneManager.LoadScene("Level two");
             }
         }

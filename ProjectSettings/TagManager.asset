@@ -8,6 +8,9 @@ TagManager:
   - EndLevel
   - LevelOneTransition
   - LevelTwoTransition
+  - PlayerOrbProjectile
+  - EnemyOrbProjectile
+  - BolterProjectile
   layers:
   - Default
   - TransparentFX
