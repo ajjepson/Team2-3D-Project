@@ -11,6 +11,7 @@ TagManager:
   - PlayerOrbProjectile
   - EnemyOrbProjectile
   - BolterProjectile
+  - Enemy
   layers:
   - Default
   - TransparentFX
