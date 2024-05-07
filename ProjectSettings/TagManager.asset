@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Health
-  - Ammo
-  - BolterProjectile
-  - EnemyOrbProjectile
-  - DeathZone
-  - EndLevel
-<<<<<<< Updated upstream
-  - LevelOneTransition
-=======
-  - PlayerOrbProjectile
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Post Processing Layer
-  - whatIsGround
+  - 
+  - 
   - 
   - 
   - 
